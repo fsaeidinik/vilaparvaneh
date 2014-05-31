@@ -1,66 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout 
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/custom_actionbar_relativelayout_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:enabled="false"
-    android:id="@+id/custom_actionbar_relativelayout_main"
     android:background="@color/actionbar_background"
-     >
-
-    <ImageButton
-        android:id="@+id/actionbar_button_drawer_layout"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_alignParentLeft="true" 
-        android:padding="10dp"
-        android:background="@android:color/transparent"
-        android:src="@drawable/drawer_icon"
-        />
-    <RadioGroup 
-        android:layout_centerInParent="true"
-        android:gravity="center_vertical"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:orientation="horizontal"
-        >
-        <ImageButton 
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/drawer_icon"
-            android:background="@android:color/transparent"
-            android:checked="true"
-            />
-        <ImageButton 
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/drawer_icon"
-            android:background="@android:color/transparent"
-            />
-        <ImageButton 
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/drawer_icon"
-            android:background="@android:color/transparent"
-            />
-    </RadioGroup>
+    android:enabled="false" >
 
     <ImageButton
         android:id="@+id/actionbar_button_filter"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:background="@android:color/transparent"
         android:padding="10dp"
         android:paddingRight="8dp"
-        android:background="@android:color/transparent"
-        android:textColor="@android:color/white"
         android:src="@drawable/drawer_icon"
-        android:textSize="18sp"
-        />
-    <View 
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:id="@+id/actionbar_radio_group"
+        >
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:checked="true"
+            android:src="@drawable/drawer_icon"
+            android:id="@+id/actionbar_image_button_small"
+             />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/drawer_icon" 
+            android:id="@+id/actionbar_image_button_large"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/drawer_icon" 
+            android:id="@+id/actionbar_image_button_map"
+            />
+    </RadioGroup>
+
+    <ImageButton
+        android:id="@+id/actionbar_imagebutton_drawer_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/transparent"
+        android:padding="10dp"
+        android:src="@drawable/drawer_icon" />
+
+    <View
         android:layout_width="match_parent"
         android:layout_height="0.5dp"
-        android:background="@android:color/black"
         android:layout_alignParentBottom="true"
-        />
+        android:background="@android:color/black" />
+
 </RelativeLayout>

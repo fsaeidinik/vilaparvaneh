@@ -23,5 +23,9 @@
         <item name="android:paddingTop">@dimen/app_default_component_margin_large</item>
         <item name="android:paddingBottom">@dimen/app_default_component_margin_large</item>
     </style>
+    
+    <style name="text_view_small" parent="@android:style/Widget.TextView">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+    </style>
 
 </resources>

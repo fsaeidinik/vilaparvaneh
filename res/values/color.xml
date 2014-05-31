@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<color name="actionbar_background"> #c9c8ca</color>    
+	<color name="actionbar_background"> #c9c8ca</color>
+	
+	<!-- drawer layout colors -->    
+	<color name="drawerlayout_background"> #6f6f6f</color>
+	<color name="drawerlayout_topic_background">#000000</color>
+	<color name="drawerlayout_text">#FFFFFF</color>
+	<color name="drawerlayout_list_divider">#e0e0e0</color>
+	<color name="drawerlayout_scrim">#80e0e0e0</color>
+	
 	
 </resources>
